@@ -3,7 +3,7 @@
 //In these first 6 questions, replace `null` with the answer
 
 //1. create a string variable, it can contain anything
-const newString = "Hello there!";
+const newString = 'Hello there!';
 
 //2. create a number variable, it an be any number
 const newNum = 42;
@@ -146,20 +146,22 @@ function raiseToPower(num, exponent) {
   // raise num to whatever power is passed in as exponent
   if (exponent === 0) {
     return 1;
-  } else (exponent === 1) {
+  } if (exponent === 1) {
     return num;
   } else {
-    let solution = 0;
-    for (let i = 0; i <= exponent; i++) {
-      solution = num * num;
+    let solution = 1;
+    for (let i = 0; i < exponent; i++) {
+      solution *= num ;
     }
     return solution;
   }
 }
+console.log(raiseToPower(3,5))
+
 // 22
 function roundNumber(num) {
   // round num and return it
-  return Math.roundNumber(num);
+  return Math.round(num);
 }
 
 // 23
@@ -172,21 +174,20 @@ function roundUp(num) {
 function addExclamationPoint(str) {
   // add an exclamation point to the end of str and return the new string
   // 'hello world' -> 'hello world!'
-  return `${str} + "!"`;
+  return `${str}` + '!';
 }
-
 // 25
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'NSS', 'Bootcamp' -> 'NSS Bootcamp'
-  return `${firstName} + " " + ${lastName}`;
+  return `${firstName}` + " " + `${lastName}`;
 }
 
 // 26
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
-  return `"Hello " + ${name} + "!"`;
+  return 'Hello ' + `${name}` + "!";
 }
 
 // The next three questions will have you implement math area formulas.
