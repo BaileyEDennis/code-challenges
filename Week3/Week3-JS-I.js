@@ -1,4 +1,4 @@
-"use strict";
+'use strict';
 
 //In these first 6 questions, replace `null` with the answer
 
@@ -204,3 +204,4 @@ function getTriangleArea(base, height) {
   // return the area of the triangle by using base and height
   return (base * height) / 2;
 }
+
