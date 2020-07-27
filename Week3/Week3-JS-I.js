@@ -138,7 +138,7 @@ function square(num) {
 // 20
 function cube(num) {
   // cube num and return the new value
-  return num * (num * num)
+  return num * (num * num);
 }
 
 // 21
@@ -156,7 +156,6 @@ function raiseToPower(num, exponent) {
     return solution;
   }
 }
-console.log(raiseToPower(3,5))
 
 // 22
 function roundNumber(num) {
@@ -180,14 +179,14 @@ function addExclamationPoint(str) {
 function combineNames(firstName, lastName) {
   // return firstName and lastName combined as one string and separated by a space.
   // 'NSS', 'Bootcamp' -> 'NSS Bootcamp'
-  return `${firstName}` + " " + `${lastName}`;
+  return `${firstName}` + ' ' + `${lastName}`;
 }
 
 // 26
 function getGreeting(name) {
   // Take the name string and concatenate other strings onto it so it takes the following form:
   // 'Sam' -> 'Hello Sam!'
-  return 'Hello ' + `${name}` + "!";
+  return 'Hello ' + `${name}` + '!';
 }
 
 // The next three questions will have you implement math area formulas.
